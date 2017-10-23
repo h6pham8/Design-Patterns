@@ -11,23 +11,14 @@ def math_wrapper(func):
 
 
 # this is equivalent to add = math_wrapper(add(x, y))
-
 @math_wrapper
 def add(x, y):
     return x + y
 
 
-def subtract(x, y):
-    return x - y
-
-
 @math_wrapper
 def multiply(x, y):
     return x * y
-
-
-def divide(x, y):
-    return x / y
 
 
 add(1, 1)    # should output 3 instead of 2
